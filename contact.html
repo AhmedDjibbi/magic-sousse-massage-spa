@@ -1,0 +1,595 @@
+<!DOCTYPE html>
+
+<html class="scroll-smooth" lang="fr"><head>
+<meta charset="utf-8"/>
+<meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+<title>Aura Sanctuary • Magic Sousse Massage Spa | Conciergerie &amp; Réservations</title>
+<!-- Google Fonts & Material Symbols -->
+<link href="https://fonts.googleapis.com" rel="preconnect"/>
+<link crossorigin="" href="https://fonts.gstatic.com" rel="preconnect"/>
+<link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400;0,500;0,600;0,700;1,400&amp;family=Plus+Jakarta+Sans:wght@300;400;500;600;700&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<!-- Tailwind CSS v3 -->
+<script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+<script id="tailwind-config">
+    tailwind.config = {
+      darkMode: "class",
+      theme: {
+        extend: {
+          "colors": {
+            "primary-container": "#c5a059",
+            "inverse-primary": "#e9c176",
+            "primary-fixed-dim": "#e9c176",
+            "on-primary": "#ffffff",
+            "tertiary-fixed": "#ece0da",
+            "on-primary-fixed-variant": "#5d4201",
+            "tertiary-container": "#ada39d",
+            "on-tertiary-container": "#403a35",
+            "on-primary-fixed": "#261900",
+            "on-error": "#ffffff",
+            "on-secondary": "#ffffff",
+            "surface-container-highest": "#e6e2dd",
+            "surface-dim": "#ded9d4",
+            "error": "#ba1a1a",
+            "surface-container": "#f2ede8",
+            "tertiary": "#655d58",
+            "on-tertiary": "#ffffff",
+            "primary-fixed": "#ffdea5",
+            "surface-container-lowest": "#ffffff",
+            "on-tertiary-fixed-variant": "#4d4541",
+            "on-surface-variant": "#4e4639",
+            "on-error-container": "#93000a",
+            "primary": "#775a19",
+            "background": "#fef8f3",
+            "outline": "#7f7667",
+            "error-container": "#ffdad6",
+            "on-primary-container": "#4e3700",
+            "on-tertiary-fixed": "#201a17",
+            "secondary-fixed-dim": "#bbcbb6",
+            "surface-container-high": "#ece7e2",
+            "on-secondary-container": "#586755",
+            "tertiary-fixed-dim": "#cfc4be",
+            "surface-tint": "#775a19",
+            "surface-bright": "#fef8f3",
+            "on-secondary-fixed-variant": "#3c4b3a",
+            "on-surface": "#1d1b19",
+            "on-secondary-fixed": "#111f11",
+            "secondary-container": "#d4e4ce",
+            "inverse-surface": "#32302d",
+            "surface-container-low": "#f8f3ee",
+            "surface-variant": "#e6e2dd",
+            "inverse-on-surface": "#f5f0eb",
+            "outline-variant": "#d1c5b4",
+            "secondary": "#536251",
+            "secondary-fixed": "#d7e7d1",
+            "on-background": "#1d1b19",
+            "surface": "#fef8f3"
+          },
+          "borderRadius": {
+            "DEFAULT": "0.125rem",
+            "lg": "0.25rem",
+            "xl": "0.5rem",
+            "full": "0.75rem"
+          },
+          "spacing": {
+            "space-xl": "2.5rem",
+            "margin-desktop": "4rem",
+            "space-sm": "0.5rem",
+            "gutter-desktop": "2.5rem",
+            "space-2xl": "4rem",
+            "space-xs": "0.25rem",
+            "space-3xl": "6rem",
+            "space-lg": "1.5rem",
+            "gutter": "1.5rem",
+            "margin-tablet": "2.5rem",
+            "space-md": "1rem",
+            "margin": "1.25rem"
+          },
+          "fontFamily": {
+            "headline-sm": ["Playfair Display"],
+            "label-md": ["Plus Jakarta Sans"],
+            "title-lg": ["Plus Jakarta Sans"],
+            "display-lg": ["Playfair Display"],
+            "label-lg": ["Plus Jakarta Sans"],
+            "headline-lg": ["Playfair Display"],
+            "headline-md": ["Playfair Display"],
+            "title-md": ["Plus Jakarta Sans"],
+            "display-lg-mobile": ["Playfair Display"],
+            "headline-lg-mobile": ["Playfair Display"],
+            "caption": ["Plus Jakarta Sans"],
+            "body-md": ["Plus Jakarta Sans"],
+            "body-lg": ["Plus Jakarta Sans"]
+          },
+          "fontSize": {
+            "headline-sm": ["22px", { "lineHeight": "30px", "letterSpacing": "0.01em", "fontWeight": "500" }],
+            "label-md": ["11px", { "lineHeight": "16px", "letterSpacing": "0.16em", "fontWeight": "600" }],
+            "title-lg": ["18px", { "lineHeight": "26px", "letterSpacing": "0.02em", "fontWeight": "600" }],
+            "display-lg": ["56px", { "lineHeight": "68px", "letterSpacing": "-0.02em", "fontWeight": "400" }],
+            "label-lg": ["13px", { "lineHeight": "18px", "letterSpacing": "0.12em", "fontWeight": "600" }],
+            "headline-lg": ["40px", { "lineHeight": "50px", "letterSpacing": "-0.01em", "fontWeight": "400" }],
+            "headline-md": ["28px", { "lineHeight": "36px", "letterSpacing": "0em", "fontWeight": "400" }],
+            "title-md": ["16px", { "lineHeight": "24px", "letterSpacing": "0.01em", "fontWeight": "600" }],
+            "display-lg-mobile": ["38px", { "lineHeight": "48px", "letterSpacing": "-0.01em", "fontWeight": "400" }],
+            "headline-lg-mobile": ["28px", { "lineHeight": "36px", "letterSpacing": "0em", "fontWeight": "400" }],
+            "caption": ["12px", { "lineHeight": "18px", "letterSpacing": "0.02em", "fontWeight": "400" }],
+            "body-md": ["15px", { "lineHeight": "24px", "letterSpacing": "0.01em", "fontWeight": "400" }],
+            "body-lg": ["17px", { "lineHeight": "28px", "letterSpacing": "0.01em", "fontWeight": "400" }]
+          }
+        }
+      }
+    }
+  </script>
+<style>
+    .material-symbols-outlined {
+      font-variation-settings: 'FILL' 0, 'wght' 300, 'GRAD' 0, 'opsz' 24;
+      display: inline-block;
+      vertical-align: middle;
+      line-height: 1;
+    }
+    .brass-border {
+      border: 1px solid rgba(197, 160, 89, 0.3);
+    }
+    .brass-glow:hover {
+      box-shadow: 0 0 25px rgba(197, 160, 89, 0.25);
+    }
+    .travertine-backdrop {
+      background: rgba(254, 248, 243, 0.85);
+      backdrop-filter: blur(16px);
+      -webkit-backdrop-filter: blur(16px);
+    }
+  </style>
+<meta content="web_standard" name="shell-type"/></head>
+<body class="bg-background text-on-surface antialiased selection:bg-primary-container/30 selection:text-primary">
+<!-- TOP APP BAR / NAVIGATION (Anchored from Shared Components JSON) -->
+<header class="fixed top-0 left-0 w-full z-50 bg-surface/80 dark:bg-inverse-surface/80 backdrop-blur-md shadow-sm border-b border-primary/20 dark:border-primary-fixed-dim/20 transition-all duration-300">
+<div class="max-w-7xl mx-auto px-gutter md:px-margin-desktop py-space-sm flex items-center justify-between">
+<!-- Brand Logo Anchor -->
+<a class="flex flex-col group" href="index.html">
+<span class="font-headline-sm text-headline-sm tracking-wider uppercase text-on-surface dark:text-inverse-on-surface font-semibold group-hover:text-primary transition-colors">
+          AURA SANCTUARY
+        </span>
+<span class="font-label-md text-label-md text-primary tracking-widest font-normal uppercase">
+          MAGIC SOUSSE SPA • CORNICHE
+        </span>
+</a>
+<!-- Desktop Nav Links -->
+<nav class="hidden md:flex items-center space-x-8">
+<a class="font-label-lg text-label-lg text-on-surface-variant dark:text-tertiary-fixed-dim hover:text-primary dark:hover:text-inverse-primary transition-colors duration-200" href="index.html">
+          Home
+        </a>
+<a class="font-label-lg text-label-lg text-on-surface-variant dark:text-tertiary-fixed-dim hover:text-primary dark:hover:text-inverse-primary transition-colors duration-200" href="services.html">
+          Services
+        </a>
+<!-- Active Tab: Contact -->
+<a class="font-label-lg text-label-lg text-primary dark:text-inverse-primary border-b border-primary pb-1 font-semibold" href="contact.html">
+          Contact
+        </a>
+</nav>
+<!-- Trailing Action -->
+<div class="flex items-center space-x-4">
+<a class="hidden sm:inline-flex items-center justify-center px-5 py-2.5 rounded-lg bg-[#2B2521] text-[#F5F0EB] font-label-lg text-label-lg brass-border brass-glow hover:border-primary-container transition-all duration-300 active:scale-95 shadow-sm" href="#reservation-hub">
+<span>Prendre Rendez-vous</span>
+</a>
+<!-- Mobile Menu Trigger -->
+<button aria-label="Ouvrir le menu" class="md:hidden p-2 text-on-surface hover:text-primary" id="mobile-menu-btn">
+<span class="material-symbols-outlined" data-icon="menu">menu</span>
+</button>
+</div>
+</div>
+<!-- Mobile Drawer Nav -->
+<div class="hidden md:hidden px-6 py-4 bg-surface-container-high border-t border-outline-variant/30 flex flex-col space-y-4" id="mobile-menu">
+<a class="font-label-lg text-label-lg text-on-surface-variant py-2" href="index.html">Home</a>
+<a class="font-label-lg text-label-lg text-on-surface-variant py-2" href="services.html">Services</a>
+<a class="font-label-lg text-label-lg text-primary font-semibold py-2 border-l-2 border-primary pl-3" href="contact.html">Contact</a>
+<a class="w-full text-center py-3 bg-[#2B2521] text-[#F5F0EB] font-label-lg text-label-lg rounded-lg brass-border" href="#reservation-hub">
+        Prendre Rendez-vous
+      </a>
+</div>
+</header>
+<!-- MAIN CANVAS -->
+<main class="pt-24 md:pt-28"><div class="flex flex-col w-full">
+<!-- 1. HERO HEADER BANNER -->
+<section class="relative w-full py-20 md:py-28 px-gutter md:px-margin-desktop overflow-hidden bg-surface">
+<!-- Ambient glowing backdrop -->
+<div class="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 w-[600px] h-[600px] bg-primary-container/10 rounded-full blur-3xl pointer-events-none"></div>
+<div class="max-w-7xl mx-auto relative z-10 flex flex-col items-center text-center">
+<!-- Overline Tag -->
+<div class="flex items-center space-x-3 mb-4">
+<span class="w-8 h-[1px] bg-primary"></span>
+<span class="font-label-md text-label-md text-primary tracking-widest uppercase">Conciergerie &amp; Réservations</span>
+<span class="w-8 h-[1px] bg-primary"></span>
+</div>
+<!-- Main Title -->
+<h1 class="font-headline-lg md:text-display-lg text-headline-lg-mobile text-on-surface mb-6 font-normal tracking-tight">
+        Planifiez Votre Évasion Sensorielle
+      </h1>
+<p class="font-body-lg text-body-lg text-on-surface-variant max-w-2xl mb-12">
+        Notre équipe de concierges est à votre entière disposition pour orchestrer vos rituels sur-mesure sur la Corniche de Sousse.
+      </p>
+<!-- Trust Badges -->
+<div class="grid grid-cols-1 sm:grid-cols-3 gap-6 w-full max-w-4xl pt-8 border-t border-outline-variant/30">
+<div class="flex items-center justify-center space-x-3 p-4 rounded-xl bg-surface-container-low/70 backdrop-blur-md brass-border">
+<span class="material-symbols-outlined text-primary" style="font-variation-settings: 'FILL' 1;">workspace_premium</span>
+<div class="text-left">
+<h4 class="font-title-md text-title-md text-on-surface">Label d'Excellence</h4>
+<p class="font-caption text-caption text-tertiary">Rituels authentiques certifiés</p>
+</div>
+</div>
+<div class="flex items-center justify-center space-x-3 p-4 rounded-xl bg-surface-container-low/70 backdrop-blur-md brass-border">
+<span class="material-symbols-outlined text-primary" style="font-variation-settings: 'FILL' 1;">spa</span>
+<div class="text-left">
+<h4 class="font-title-md text-title-md text-on-surface">100% Bio &amp; Naturel</h4>
+<p class="font-caption text-caption text-tertiary">Huiles essentielles locales</p>
+</div>
+</div>
+<div class="flex items-center justify-center space-x-3 p-4 rounded-xl bg-surface-container-low/70 backdrop-blur-md brass-border">
+<span class="material-symbols-outlined text-primary" style="font-variation-settings: 'FILL' 1;">verified_user</span>
+<div class="text-left">
+<h4 class="font-title-md text-title-md text-on-surface">Confidentialité</h4>
+<p class="font-caption text-caption text-tertiary">Suites privatives sécurisées</p>
+</div>
+</div>
+</div>
+</div>
+</section>
+<!-- 2. INTERACTIVE BOOKING / INQUIRY FORM -->
+<section class="w-full py-16 md:py-24 px-gutter md:px-margin-desktop bg-surface-container-low relative" id="reservation-hub">
+<div class="max-w-5xl mx-auto">
+<div class="bg-surface/80 backdrop-blur-xl p-8 md:p-12 rounded-2xl brass-border shadow-xl">
+<div class="text-center max-w-xl mx-auto mb-12">
+<span class="font-label-md text-label-md text-primary tracking-widest uppercase block mb-2">Module de Réservation</span>
+<h2 class="font-headline-md text-headline-md text-on-surface mb-3">Réservez Votre Séquence Bien-être</h2>
+<p class="font-body-md text-body-md text-on-surface-variant">Veuillez renseigner vos préférences. Notre conciergerie vous contactera sous 2 heures pour confirmer les détails.</p>
+</div>
+<form class="space-y-6" id="spa-booking-form" onsubmit="event.preventDefault(); handleBookingSubmit();">
+<div class="grid grid-cols-1 md:grid-cols-2 gap-6">
+<!-- Name -->
+<div class="space-y-2">
+<label class="font-label-lg text-label-lg text-on-surface flex items-center justify-between">
+<span>Nom &amp; Prénom</span>
+<span class="text-xs text-primary">*</span>
+</label>
+<input class="w-full bg-surface-container-lowest border border-outline-variant/50 rounded-lg px-4 py-3 text-body-md text-on-surface focus:border-primary focus:ring-0 transition-colors" placeholder="Ex. Yasmine Ben Ali" required="" type="text"/>
+</div>
+<!-- Phone -->
+<div class="space-y-2">
+<label class="font-label-lg text-label-lg text-on-surface flex items-center justify-between">
+<span>Téléphone / WhatsApp</span>
+<span class="text-xs text-primary">*</span>
+</label>
+<input class="w-full bg-surface-container-lowest border border-outline-variant/50 rounded-lg px-4 py-3 text-body-md text-on-surface focus:border-primary focus:ring-0 transition-colors" placeholder="+216 XX XXX XXX" required="" type="tel"/>
+</div>
+<!-- Email -->
+<div class="space-y-2">
+<label class="font-label-lg text-label-lg text-on-surface flex items-center justify-between">
+<span>Adresse Courriel</span>
+<span class="text-xs text-primary">*</span>
+</label>
+<input class="w-full bg-surface-container-lowest border border-outline-variant/50 rounded-lg px-4 py-3 text-body-md text-on-surface focus:border-primary focus:ring-0 transition-colors" placeholder="yasmine@example.com" required="" type="email"/>
+</div>
+<!-- Service Selection -->
+<div class="space-y-2">
+<label class="font-label-lg text-label-lg text-on-surface flex items-center justify-between">
+<span>Rituel Souhaité</span>
+<span class="text-xs text-primary">*</span>
+</label>
+<select class="w-full bg-surface-container-lowest border border-outline-variant/50 rounded-lg px-4 py-3 text-body-md text-on-surface focus:border-primary focus:ring-0 transition-colors" required="">
+<option disabled="" selected="" value="">Sélectionnez un soin signature...</option>
+<option value="hammam-royal">Hammam Royal &amp; Enveloppement au Ghassoul (90 min)</option>
+<option value="massage-sousse">Massage Signature "Aura Sousse" aux Huiles Chaudes (60 min)</option>
+<option value="nordic-fusion">Rituel Fusion Nordique &amp; Eucalyptus (120 min)</option>
+<option value="couple-suite">Suite Privative Duo &amp; Bain de Fleurs (150 min)</option>
+</select>
+</div>
+<!-- Date -->
+<div class="space-y-2">
+<label class="font-label-lg text-label-lg text-on-surface">Date Préférée</label>
+<input class="w-full bg-surface-container-lowest border border-outline-variant/50 rounded-lg px-4 py-3 text-body-md text-on-surface focus:border-primary focus:ring-0 transition-colors" id="booking-date" type="date"/>
+</div>
+<!-- Time slot -->
+<div class="space-y-2">
+<label class="font-label-lg text-label-lg text-on-surface">Créneau Horaire</label>
+<select class="w-full bg-surface-container-lowest border border-outline-variant/50 rounded-lg px-4 py-3 text-body-md text-on-surface focus:border-primary focus:ring-0 transition-colors">
+<option>Matinée (09:00 - 12:00)</option>
+<option>Après-midi (13:00 - 17:00)</option>
+<option>Crépuscule (17:30 - 20:00)</option>
+</select>
+</div>
+</div>
+<!-- Custom requests / aromatic preferences -->
+<div class="space-y-2 pt-2">
+<label class="font-label-lg text-label-lg text-on-surface">Préférences Aromatiques &amp; Requêtes Particulières</label>
+<textarea class="w-full bg-surface-container-lowest border border-outline-variant/50 rounded-lg px-4 py-3 text-body-md text-on-surface focus:border-primary focus:ring-0 transition-colors" placeholder="Précisez vos préférences (ex: pression ferme, notes de néroli, intolérances, occasion spéciale...)" rows="4"></textarea>
+</div>
+<!-- Submit Button -->
+<div class="pt-4 text-center">
+<button class="w-full sm:w-auto px-10 py-4 bg-[#2B2521] text-[#F5F0EB] font-label-lg text-label-lg rounded-lg brass-border brass-glow hover:border-primary-container transition-all duration-300 uppercase tracking-widest shadow-md" type="submit">
+<span>Confirmer la Demande de Réservation</span>
+</button>
+</div>
+<!-- Confirmation State Notification -->
+<div class="hidden mt-6 p-6 rounded-xl bg-secondary-container/40 text-on-secondary-container border border-secondary/30 text-center animate-pulse" id="booking-confirmation">
+<span class="material-symbols-outlined text-3xl mb-2 text-primary">task_alt</span>
+<h4 class="font-headline-sm text-headline-sm mb-1">Demande Enregistrée avec Succès</h4>
+<p class="font-body-md text-body-md">Votre conciergerie privée vous contactera par téléphone ou WhatsApp dans les plus brefs délais pour valider votre heure exacte.</p>
+</div>
+</form>
+</div>
+</div>
+</section>
+<!-- 3. PRACTICAL INFORMATION BENTO -->
+<section class="w-full py-16 md:py-24 px-gutter md:px-margin-desktop bg-surface">
+<div class="max-w-7xl mx-auto">
+<div class="text-center max-w-2xl mx-auto mb-16">
+<span class="font-label-md text-label-md text-primary tracking-widest uppercase block mb-2">Informations Pratiques</span>
+<h2 class="font-headline-lg md:text-headline-lg text-headline-lg-mobile text-on-surface">Votre Visite au Sanctuaire</h2>
+</div>
+<div class="grid grid-cols-1 md:grid-cols-3 gap-8">
+<!-- Operating Hours Card -->
+<div class="bg-surface-container-low p-8 rounded-2xl brass-border flex flex-col justify-between">
+<div>
+<div class="w-12 h-12 rounded-full bg-primary/10 flex items-center justify-center text-primary mb-6">
+<span class="material-symbols-outlined">schedule</span>
+</div>
+<h3 class="font-headline-sm text-headline-sm text-on-surface mb-4">Horaires d'Ouverture</h3>
+<ul class="space-y-3 font-body-md text-body-md text-on-surface-variant">
+<li class="flex justify-between border-b border-outline-variant/20 pb-2">
+<span>Lundi – Samedi</span>
+<span class="font-semibold text-on-surface">09:00 – 20:00</span>
+</li>
+<li class="flex justify-between border-b border-outline-variant/20 pb-2">
+<span>Dimanche &amp; Jours Fériés</span>
+<span class="font-semibold text-on-surface">10:00 – 19:00</span>
+</li>
+</ul>
+</div>
+<div class="pt-6 mt-6 border-t border-outline-variant/20">
+<p class="font-caption text-caption text-tertiary">Dernière admission aux rituels 90 minutes avant la fermeture.</p>
+</div>
+</div>
+<!-- Contact Hotline Card -->
+<div class="bg-surface-container-low p-8 rounded-2xl brass-border flex flex-col justify-between">
+<div>
+<div class="w-12 h-12 rounded-full bg-primary/10 flex items-center justify-center text-primary mb-6">
+<span class="material-symbols-outlined">phone_in_talk</span>
+</div>
+<h3 class="font-headline-sm text-headline-sm text-on-surface mb-4">Ligne Directe &amp; Conciergerie</h3>
+<div class="space-y-4 font-body-md text-body-md text-on-surface-variant">
+<div>
+<span class="block text-xs uppercase tracking-wider text-tertiary">Téléphone &amp; WhatsApp</span>
+<a class="font-semibold text-on-surface hover:text-primary transition-colors" href="tel:+21673000000">+216 73 000 000</a>
+</div>
+<div>
+<span class="block text-xs uppercase tracking-wider text-tertiary">Courrier Électronique</span>
+<a class="font-semibold text-on-surface hover:text-primary transition-colors" href="mailto:concierge@aurasanctuary.com">concierge@aurasanctuary.com</a>
+</div>
+</div>
+</div>
+<div class="pt-6 mt-6 border-t border-outline-variant/20">
+<span class="inline-flex items-center text-xs font-semibold text-primary">
+<span class="material-symbols-outlined text-sm mr-1">chat</span> Réponse instantanée sur WhatsApp
+            </span>
+</div>
+</div>
+<!-- Address & Valet Card -->
+<div class="bg-surface-container-low p-8 rounded-2xl brass-border flex flex-col justify-between">
+<div>
+<div class="w-12 h-12 rounded-full bg-primary/10 flex items-center justify-center text-primary mb-6">
+<span class="material-symbols-outlined">directions_car</span>
+</div>
+<h3 class="font-headline-sm text-headline-sm text-on-surface mb-4">Accès &amp; Voiturier</h3>
+<p class="font-body-md text-body-md text-on-surface-variant mb-4">
+              Boulevard Habib Bourguiba, Corniche de Sousse 4000, Tunisie. En front de mer, face aux vagues azurées.
+            </p>
+</div>
+<div class="pt-6 mt-6 border-t border-outline-variant/20">
+<div class="flex items-center space-x-2 text-xs font-semibold text-on-surface">
+<span class="material-symbols-outlined text-primary">local_parking</span>
+<span>Service voiturier gratuit et sécurisé à disposition.</span>
+</div>
+</div>
+</div>
+</div>
+</div>
+</section>
+<!-- 4. AESTHETIC MAP / DIRECTIONS CARD -->
+<section class="w-full py-16 px-gutter md:px-margin-desktop bg-surface-container-high">
+<div class="max-w-7xl mx-auto">
+<div class="grid grid-cols-1 lg:grid-cols-12 gap-8 items-center">
+<div class="lg:col-span-5 space-y-6">
+<span class="font-label-md text-label-md text-primary tracking-widest uppercase block">Situation Géographique</span>
+<h2 class="font-headline-md text-headline-md text-on-surface">Un Sanctuaire au Cœur de la Corniche</h2>
+<p class="font-body-md text-body-md text-on-surface-variant">
+            Idéalement niché sur le front de mer de Sousse, notre spa offre un havre de paix intemporel à proximité immédiate des points d'intérêt majeurs de la région.
+          </p>
+<div class="space-y-4 pt-2">
+<div class="flex items-start space-x-4 p-3 rounded-lg bg-surface/60 brass-border">
+<span class="material-symbols-outlined text-primary mt-0.5">near_me</span>
+<div>
+<h4 class="font-title-md text-title-md text-on-surface">Port El Kantaoui</h4>
+<p class="font-caption text-caption text-tertiary">12 minutes en véhicule privé vers le nord.</p>
+</div>
+</div>
+<div class="flex items-start space-x-4 p-3 rounded-lg bg-surface/60 brass-border">
+<span class="material-symbols-outlined text-primary mt-0.5">castle</span>
+<div>
+<h4 class="font-title-md text-title-md text-on-surface">Médina Historique &amp; Ribat</h4>
+<p class="font-caption text-caption text-tertiary">5 minutes au sud par le littoral.</p>
+</div>
+</div>
+<div class="flex items-start space-x-4 p-3 rounded-lg bg-surface/60 brass-border">
+<span class="material-symbols-outlined text-primary mt-0.5">waves</span>
+<div>
+<h4 class="font-title-md text-title-md text-on-surface">Mer Méditerranée</h4>
+<p class="font-caption text-caption text-tertiary">Accès direct et vues panoramiques depuis nos cabines.</p>
+</div>
+</div>
+</div>
+</div>
+<div class="lg:col-span-7">
+<!-- Interactive-looking map card container -->
+<div class="relative w-full h-[450px] rounded-2xl overflow-hidden brass-border shadow-xl">
+<!-- Simulated Map Image Background -->
+<div class="w-full h-full bg-cover bg-center filter saturate-[0.8] contrast-[1.05]" data-alt="An artistic high-end aerial map view of the Sousse Corniche coastline featuring Mediterranean blue waters, golden sandy beaches, elegant coastal palm trees, and subtle luxury map markers highlighting Aura Sanctuary location in warm travertine and brass tones." data-location="Boulevard Habib Bourguiba, Sousse Corniche, Tunisia" style="background-image: url('https://lh3.googleusercontent.com/aida-public/AB6AXuDKwzT-4J4CKPV7IwMQMNL8aab4jNuFJIrKnQ8LWRu1etTK11JD2az1_5HdnqpVGWi1qSUWVUolEtfAvP0_ve3DYHSfuLQ-UerF2UtdCELS0pB9PvAOGqgL0IlZItydSpfjjxr1QTw619i-z1_lcIWp6J4MMT3sPdOlkC8HaQ-Cno7iTA8zNFXEA_eWMjihgBI3HcCQmOzUzemqU0Fhp0u86y6IApTbdNGmERNsCM_zfNp2SvuLuXcB_uVRnNPB9gujIKlMw7t0s2Z0')"></div>
+<!-- Floating Map Pin Landmark 1 -->
+<div class="absolute top-1/3 left-1/2 -translate-x-1/2 -translate-y-1/2 bg-surface/90 backdrop-blur-md px-4 py-2 rounded-full brass-border shadow-lg flex items-center space-x-2 animate-bounce">
+<span class="material-symbols-outlined text-primary text-sm" style="font-variation-settings: 'FILL' 1;">location_on</span>
+<span class="font-label-lg text-label-lg text-on-surface">Aura Sanctuary • Corniche</span>
+</div>
+<!-- Landmark Tag 2 -->
+<div class="absolute bottom-6 left-6 bg-surface/90 backdrop-blur-md px-3 py-1.5 rounded-lg brass-border text-xs text-on-surface font-semibold flex items-center space-x-1.5">
+<span class="material-symbols-outlined text-primary text-xs">anchor</span>
+<span>Port El Kantaoui (12 min)</span>
+</div>
+<!-- Landmark Tag 3 -->
+<div class="absolute bottom-6 right-6 bg-surface/90 backdrop-blur-md px-3 py-1.5 rounded-lg brass-border text-xs text-on-surface font-semibold flex items-center space-x-1.5">
+<span class="material-symbols-outlined text-primary text-xs">history_edu</span>
+<span>Médina de Sousse (5 min)</span>
+</div>
+</div>
+</div>
+</div>
+</div>
+</section>
+<!-- 5. FAQ & SERENITY PROTOCOLS ACCORDION SECTION -->
+<section class="w-full py-16 md:py-24 px-gutter md:px-margin-desktop bg-surface" id="faq">
+<div class="max-w-4xl mx-auto">
+<div class="text-center mb-16">
+<span class="font-label-md text-label-md text-primary tracking-widest uppercase block mb-2">Protocoles &amp; Sérénité</span>
+<h2 class="font-headline-lg md:text-headline-lg text-headline-lg-mobile text-on-surface mb-3">Questions Fréquentes</h2>
+<p class="font-body-md text-body-md text-on-surface-variant">Tout ce que vous devez savoir pour préparer votre immersion au sein d'Aura Sanctuary.</p>
+</div>
+<div class="space-y-4">
+<!-- FAQ Item 1 -->
+<details class="group bg-surface-container-low rounded-xl brass-border overflow-hidden transition-all duration-300">
+<summary class="flex items-center justify-between p-6 cursor-pointer font-title-lg text-title-lg text-on-surface select-none">
+<span>Quand dois-je arriver avant mon soin ?</span>
+<span class="material-symbols-outlined text-primary transition-transform duration-300 group-open:rotate-180">expand_more</span>
+</summary>
+<div class="px-6 pb-6 font-body-md text-body-md text-on-surface-variant border-t border-outline-variant/20 pt-4">
+            Nous vous recommandons d'arriver 30 minutes avant l'heure prévue de votre rituel. Cela vous laisse le temps de vous détendre dans notre salon d'accueil, de savourer une infusion botanique et de vous préparer sereinement dans les vestiaires sans précipitation.
+          </div>
+</details>
+<!-- FAQ Item 2 -->
+<details class="group bg-surface-container-low rounded-xl brass-border overflow-hidden transition-all duration-300">
+<summary class="flex items-center justify-between p-6 cursor-pointer font-title-lg text-title-lg text-on-surface select-none">
+<span>Quelles sont les règles vestimentaires et d'hygiène ?</span>
+<span class="material-symbols-outlined text-primary transition-transform duration-300 group-open:rotate-180">expand_more</span>
+</summary>
+<div class="px-6 pb-6 font-body-md text-body-md text-on-surface-variant border-t border-outline-variant/20 pt-4">
+            Aura Sanctuary fournit peignoirs, serviettes moelleuses et sous-vêtements jetables adaptés à chaque soin. Pour les bains thermaux et le hammam, le port du maillot de bain est requis. Des casiers sécurisés sont mis à votre disposition.
+          </div>
+</details>
+<!-- FAQ Item 3 -->
+<details class="group bg-surface-container-low rounded-xl brass-border overflow-hidden transition-all duration-300">
+<summary class="flex items-center justify-between p-6 cursor-pointer font-title-lg text-title-lg text-on-surface select-none">
+<span>Quelle est la politique d'annulation ou de report ?</span>
+<span class="material-symbols-outlined text-primary transition-transform duration-300 group-open:rotate-180">expand_more</span>
+</summary>
+<div class="px-6 pb-6 font-body-md text-body-md text-on-surface-variant border-t border-outline-variant/20 pt-4">
+            Par respect pour nos praticiens et les autres hôtes en liste d'attente, toute annulation ou report doit nous être notifié au moins 24 heures à l'avance par téléphone ou WhatsApp. Passé ce délai, 50% du montant du soin pourra être facturé.
+          </div>
+</details>
+<!-- FAQ Item 4 -->
+<details class="group bg-surface-container-low rounded-xl brass-border overflow-hidden transition-all duration-300">
+<summary class="flex items-center justify-between p-6 cursor-pointer font-title-lg text-title-lg text-on-surface select-none">
+<span>Proposez-vous des bons cadeaux pour offrir ?</span>
+<span class="material-symbols-outlined text-primary transition-transform duration-300 group-open:rotate-180">expand_more</span>
+</summary>
+<div class="px-6 pb-6 font-body-md text-body-md text-on-surface-variant border-t border-outline-variant/20 pt-4">
+            Absolument. Nos cartes cadeaux personnalisées "Rituel d'Exception" sont disponibles en conciergerie ou sur commande en ligne, valables 1 an pour l'ensemble de notre catalogue de soins et d'abonnements thermaux.
+          </div>
+</details>
+</div>
+</div>
+</section>
+</div></main>
+<!-- UNIFIED FOOTER (Anchored from Shared Components JSON) -->
+<footer class="w-full px-gutter md:px-margin-desktop py-space-2xl bg-surface-container-high dark:bg-inverse-surface border-t border-outline-variant/30 dark:border-outline/30 text-primary dark:text-inverse-primary transition-colors">
+<div class="max-w-7xl mx-auto grid grid-cols-1 md:grid-cols-12 gap-10 mb-12">
+<!-- Brand column -->
+<div class="md:col-span-5 space-y-4">
+<h3 class="font-headline-md text-headline-md tracking-widest uppercase text-primary dark:text-inverse-primary font-headline-sm">
+          AURA SANCTUARY
+        </h3>
+<p class="font-body-md text-body-md text-tertiary dark:text-tertiary-fixed-dim max-w-sm">
+          Sanctuaire sensoriel de bien-être, de rituels thermaux et d'aromathérapie en front de mer sur la Corniche de Sousse, Tunisie.
+        </p>
+<div class="pt-2 text-xs text-tertiary">
+          Boulevard Habib Bourguiba, Corniche de Sousse 4000 • Tél : +216 73 000 000
+        </div>
+</div>
+<!-- Links Column (Exact JSON links) -->
+<div class="md:col-span-4">
+<span class="font-headline-sm text-headline-sm text-primary dark:text-inverse-primary block mb-4">
+          Navigation &amp; Rituels
+        </span>
+<div class="grid grid-cols-2 gap-3 font-label-md text-label-md">
+<a class="text-tertiary dark:text-tertiary-fixed-dim hover:text-primary dark:hover:text-primary-fixed-dim transition-colors duration-200" href="services.html">Rituals &amp; Catalog</a>
+<a class="text-tertiary dark:text-tertiary-fixed-dim hover:text-primary dark:hover:text-primary-fixed-dim transition-colors duration-200" href="services.html">Thermal Baths</a>
+<a class="text-tertiary dark:text-tertiary-fixed-dim hover:text-primary dark:hover:text-primary-fixed-dim transition-colors duration-200" href="services.html">Aromatherapy Atelier</a>
+<a class="text-tertiary dark:text-tertiary-fixed-dim hover:text-primary dark:hover:text-primary-fixed-dim transition-colors duration-200" href="services.html">Private Suites</a>
+<a class="text-tertiary dark:text-tertiary-fixed-dim hover:text-primary dark:hover:text-primary-fixed-dim transition-colors duration-200" href="#faq">Sanctuary Policy</a>
+<a class="text-tertiary dark:text-tertiary-fixed-dim hover:text-primary dark:hover:text-primary-fixed-dim transition-colors duration-200" href="contact.html">Press &amp; Accolades</a>
+</div>
+</div>
+<!-- Newsletter Column -->
+<div class="md:col-span-3">
+<span class="font-headline-sm text-headline-sm text-primary dark:text-inverse-primary block mb-2">
+          Gazette des Saisons
+        </span>
+<p class="font-caption text-caption text-tertiary dark:text-tertiary-fixed-dim mb-4">
+          Recevez nos invitations exclusives et le calendrier des soins lunaires.
+        </p>
+<form class="flex flex-col space-y-2" onsubmit="event.preventDefault(); alert('Merci pour votre inscription à la Gazette d’Aura Sanctuary.');">
+<input class="bg-surface-container-lowest border border-outline-variant/40 rounded px-3 py-2 text-xs text-on-surface focus:border-primary focus:ring-0" placeholder="Votre adresse courriel" required="" type="email"/>
+<button class="px-4 py-2 bg-primary text-on-primary text-xs uppercase tracking-wider font-semibold rounded hover:bg-[#5d4201] transition-colors" type="submit">
+            Rejoindre le Cercle
+          </button>
+</form>
+</div>
+</div>
+<!-- Copyright Bar -->
+<div class="max-w-7xl mx-auto pt-8 border-t border-outline-variant/20 flex flex-col sm:flex-row items-center justify-between text-xs text-tertiary dark:text-tertiary-fixed-dim">
+<p>© 2025 Aura Sensory Sanctuary. Sousse Corniche, Tunisia. All rights reserved.</p>
+<div class="flex space-x-6 mt-4 sm:mt-0 font-label-md text-label-md">
+<a class="hover:text-primary" href="index.html">Confidentialité</a>
+<a class="hover:text-primary" href="index.html">Mentions Légales</a>
+<a class="hover:text-primary" href="index.html">Protocole d’Hygiène</a>
+</div>
+</div>
+</footer>
+<!-- Light Vanilla Script for Interactions -->
+<script>
+    // Mobile Drawer Toggle
+    const mobileMenuBtn = document.getElementById('mobile-menu-btn');
+    const mobileMenu = document.getElementById('mobile-menu');
+
+    if (mobileMenuBtn && mobileMenu) {
+      mobileMenuBtn.addEventListener('click', () => {
+        mobileMenu.classList.toggle('hidden');
+      });
+    }
+
+    // Default booking date to tomorrow
+    const dateInput = document.getElementById('booking-date');
+    if (dateInput) {
+      const tomorrow = new Date();
+      tomorrow.setDate(tomorrow.getDate() + 1);
+      dateInput.value = tomorrow.toISOString().split('T')[0];
+      dateInput.min = new Date().toISOString().split('T')[0];
+    }
+
+    // Reservation Simulation
+    function handleBookingSubmit() {
+      const form = document.getElementById('spa-booking-form');
+      const confirmation = document.getElementById('booking-confirmation');
+      if (confirmation) {
+        confirmation.classList.remove('hidden');
+        confirmation.scrollIntoView({ behavior: 'smooth', block: 'center' });
+      }
+    }
+  </script>
+</body></html>
